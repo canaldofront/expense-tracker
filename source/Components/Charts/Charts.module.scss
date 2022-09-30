@@ -1,0 +1,22 @@
+@import '../../../styles/variables.scss';
+
+.graph {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 5rem;
+  gap: 3rem;
+
+  @include device('tablet') {
+    grid-template-columns: 1fr;
+  }
+
+  & > div:last-child {
+    width: 100%;
+    max-width: 47rem;
+    justify-self: center;
+
+    @include device('mobile') {
+      max-width: 30rem;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../../styles/variables.scss';
+
+.section {
+  display: flex;
+  gap: 5rem;
+
+  @include device('tablet') {
+    flex-direction: column;
+  }
+}

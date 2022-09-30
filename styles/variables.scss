@@ -1,0 +1,32 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$text: #5e6066;
+$income: #7f60f3;
+$expenses: #fd7477;
+$sidebar: #f4f6ff;
+
+// Typography
+$fontFamily: 'Inter', sans-serif;
+
+// breakpoints
+@mixin device($device) {
+  @if $device == 'desktop' {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if $device == 'tablet' {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $device == 'mobile' {
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+  }
+}
